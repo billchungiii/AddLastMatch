@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AddLastMatch", "AddLastMatc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddLastMatch002", "AddLastMatch002\AddLastMatch002.csproj", "{B527FBE9-5B65-4B4D-BA11-657CC8BAB9CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddLastMatch003", "AddLastMatch003\AddLastMatch003.csproj", "{55FCE164-AB83-4E47-8E52-426DAA5EB721}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B527FBE9-5B65-4B4D-BA11-657CC8BAB9CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B527FBE9-5B65-4B4D-BA11-657CC8BAB9CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B527FBE9-5B65-4B4D-BA11-657CC8BAB9CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55FCE164-AB83-4E47-8E52-426DAA5EB721}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55FCE164-AB83-4E47-8E52-426DAA5EB721}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55FCE164-AB83-4E47-8E52-426DAA5EB721}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55FCE164-AB83-4E47-8E52-426DAA5EB721}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
