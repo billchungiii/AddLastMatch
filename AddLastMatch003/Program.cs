@@ -13,7 +13,7 @@ namespace AddLastMatch003
             foreach (var (no, value) in Read("TextFile1.txt"))
             {
                 Console.WriteLine($"{no} -- {value}");
-            }         
+            }
 
             Console.ReadLine();
         }
@@ -21,16 +21,16 @@ namespace AddLastMatch003
         static IEnumerable<(string, string)> Read(string path)
         {
 
-          return  ReadFile(path).Distinct(new MyEqualityComparer()).Reverse();
-           
+            return ReadFile(path).Distinct(new MyEqualityComparer()).Reverse();
+
         }
 
-        static IEnumerable<(string,string)> ReadFile(string path)
+        static IEnumerable<(string, string)> ReadFile(string path)
         {
-            return File.ReadLines(path).Select((x) => Split(x) ).Reverse ();
+            return File.ReadLines(path).Select((x) => Split(x)).Reverse();
 
 
-            static  (string, string) Split(string line)
+            static (string, string) Split(string line)
             {
                 var content = line.Split(",");
                 return (content[0], content[1]);
@@ -38,9 +38,6 @@ namespace AddLastMatch003
 
         }
     }
-
-
-
 
 
     class MyEqualityComparer : IEqualityComparer<(string, string)>

@@ -18,7 +18,7 @@ namespace AddLastMatch
 
         async static ValueTask<Dictionary<string, string>> ReadAsync(string path)
         {
-            var result = new Dictionary<string, string>();            
+            var result = new Dictionary<string, string>();
             using (StreamReader reader = File.OpenText(path))
             {
                 while (await reader.ReadLineAsync() is string line)
@@ -27,7 +27,7 @@ namespace AddLastMatch
                     result[content[1]] = content[0];
                 }
             }
-            
+
             return result;
         }
     }

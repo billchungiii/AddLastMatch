@@ -10,16 +10,13 @@ namespace AddLastMatch002
     {
         static void Main(string[] args)
         {
-            foreach (var (no, value) in Read ("TextFile1.txt"))
+            foreach (var (no, value) in Read("TextFile1.txt"))
             {
                 Console.WriteLine($"{no} -- {value}");
             }
 
             Console.ReadLine();
         }
-
-
-     
 
         static IEnumerable<(string, string)> Read(string path)
         {
@@ -44,7 +41,6 @@ namespace AddLastMatch002
         {
             return x.Item2 == y.Item2;
         }
-
         public int GetHashCode([DisallowNull] (string, string) obj)
         {
             return obj.Item2.GetHashCode();
